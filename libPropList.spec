@@ -6,7 +6,7 @@ Summary(ru):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
 Summary(uk):	Б╕бл╕отека для читання/запису баз умовчань в стил╕ GNUstep
 Name:		libPropList
 Version:	0.10.1
-Release:	10
+Release:	11
 License:	GPL
 Group:		X11/Libraries
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
@@ -151,8 +151,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog NEWS README
-
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
@@ -165,7 +163,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc {AUTHORS,ChangeLog,NEWS,README}.gz
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/lib*.so
 %attr(755,root,root) %{_libdir}/lib*.la
 %{_includedir}/*.h
