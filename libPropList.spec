@@ -2,7 +2,7 @@ Summary:	library for reading/writing GNUstep-style defaults databases
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.9.1
-Release:	1
+Release:	2
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Copyright:	GPL
@@ -10,7 +10,7 @@ Source:		ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
 BuildRoot:	/tmp/%{name}-%{version}-root
 
-%define		_prefix		/usr/X11R6
+%define		_prefix		/usr
 
 %description
 The libPropList library, hereafter referred to as PL, uses an opaque data
