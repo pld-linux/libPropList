@@ -90,4 +90,4 @@ rm -r $RPM_BUILD_ROOT
   [0.8.3-5]
 - spec written by Artur Frysiak <wiget@usa.net> modified by me an Micha³
   Kuratczyk <kura@pld.org.pl>,
-- package is FHS 2.0 compliat.
+- package is FHS 2.0 compliant.
