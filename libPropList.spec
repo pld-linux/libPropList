@@ -2,7 +2,7 @@ Summary:	libPropList library
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.8.3
-Release:	1d
+Release:	1
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Copyright:	GPL
@@ -86,7 +86,7 @@ rm -r $RPM_BUILD_ROOT
 
 %changelog
 * Fri Jan 29 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.8.3-1d]
+  [0.8.3-1]
 - added striping shared bibraries,
 - removed "Prereq: /sbin/ldconfig" (this is generated automatically),
 - changed base Source url and added using %%{version} macro in Source,
