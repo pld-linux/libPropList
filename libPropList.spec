@@ -13,16 +13,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr
 
 %description
-The libPropList library, hereafter referred to as PL, uses an opaque data
-type to represent a tree structure made of strings, data blocks, arrays and
-dictionaries (key-value pair lists). This structure can be manipulated,
-written out to and read in from a file, and synchronized with the contents
-of a file. The purpose of PL is to closely mimick the behaviour of the
-property lists used in GNUstep/OPENSTEP (there formed with the NSString,
-NSData, NSArray and NSDictionary classes) and to be compatible with it. PL
-enables programs that use configuration or preference files to make these
-compatible with GNUstep/OPENSTEP's user defaults handling mechanism,
-without needing to use Objective-C or GNUstep/OPENSTEP themselves.
+The libPropList library, hereafter referred to as PL, uses an opaque
+data type to represent a tree structure made of strings, data blocks,
+arrays and dictionaries (key-value pair lists). This structure can be
+manipulated, written out to and read in from a file, and synchronized
+with the contents of a file. The purpose of PL is to closely mimick
+the behaviour of the property lists used in GNUstep/OPENSTEP (there
+formed with the NSString, NSData, NSArray and NSDictionary classes)
+and to be compatible with it. PL enables programs that use
+configuration or preference files to make these compatible with
+GNUstep/OPENSTEP's user defaults handling mechanism, without needing
+to use Objective-C or GNUstep/OPENSTEP themselves.
 
 %description -l pl
 libPropList jest bibliotek± wymagan± przez Window Maker'a.
@@ -39,8 +40,8 @@ Requires:	%{name} = %{version}
 libPropList headers files
 
 %description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe i biblioteki niezbêdne do tworzenia
-aplikacji korzystaj±cych z biblioteki libPropList.
+Ten pakiet zawiera pliki nag³ówkowe i biblioteki niezbêdne do
+tworzenia aplikacji korzystaj±cych z biblioteki libPropList.
 
 %package static
 Summary:	libPropList static libraries
@@ -55,8 +56,8 @@ This package contains static libraries for building libPropList
 applications.
 
 %description static -l pl
-Ten pakiet zawiera statyczne biblioteki niezbêdne do tworzenia aplikacji
-korzystaj±cych z biblioteki libPropList.
+Ten pakiet zawiera statyczne biblioteki niezbêdne do tworzenia
+aplikacji korzystaj±cych z biblioteki libPropList.
 
 %prep
 %setup -q 
@@ -82,6 +83,7 @@ gzip -9nf AUTHORS ChangeLog NEWS README
 rm -r $RPM_BUILD_ROOT
 
 %files
+%defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
@@ -92,4 +94,5 @@ rm -r $RPM_BUILD_ROOT
 %{_includedir}/*.h
 
 %files static
-%attr(644,root,root) %{_libdir}/lib*.a
+%defattr(644,root,root,755)
+%{_libdir}/lib*.a
