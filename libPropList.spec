@@ -58,7 +58,7 @@ Ten pakiet zawiera statyczne biblioteki niezbêdne do tworzenia
 aplikacji korzystaj±cych z biblioteki libPropList.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 rm -f missing
@@ -67,12 +67,12 @@ aclocal
 autoconf
 automake -a -c
 %configure
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf AUTHORS ChangeLog NEWS README
 
