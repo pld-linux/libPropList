@@ -2,9 +2,10 @@ Summary:	library for reading/writing GNUstep-style defaults databases
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.10.1
-Release:	3
+Release:	7
 License:	GPL
 Group:		X11/Libraries
+Group(de):	X11/Libraries
 Group(pl):	X11/Biblioteki
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
@@ -32,6 +33,7 @@ libPropList jest bibliotek± wymagan± przez Window Maker'a.
 Summary:	libPropList libraries
 Summary(pl):	Biblioteki libPropList
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
@@ -47,6 +49,7 @@ tworzenia aplikacji korzystaj±cych z biblioteki libPropList.
 Summary:	libPropList static libraries
 Summary(pl):	Biblioteki statyczne libPropList
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
@@ -63,16 +66,13 @@ aplikacji korzystaj±cych z biblioteki libPropList.
 %setup -q 
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
-
 %{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT 
 
-strip $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
+%{__make} install DESTDIR=$RPM_BUILD_ROOT 
 
 gzip -9nf AUTHORS ChangeLog NEWS README
 
@@ -80,7 +80,7 @@ gzip -9nf AUTHORS ChangeLog NEWS README
 %postun -p /sbin/ldconfig
 
 %clean
-rm -r $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
