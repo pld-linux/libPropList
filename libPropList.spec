@@ -10,6 +10,7 @@ Release:	11
 License:	GPL
 Group:		X11/Libraries
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
+# Source0-md5:	ff32a4edbf9d0861012b2f10fd302ad5
 URL:		http://www.windowmaker.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
