@@ -2,7 +2,7 @@ Summary:	libPropList library
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.8.3
-Release:	2
+Release:	3
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Copyright:	GPL
@@ -15,7 +15,7 @@ Conflicts:	glibc <= 2.0.7
 libPropList library, needed by Window Maker.
 
 %description -l pl
-libPropList jest biblioteka potrzebn± do uruchamiania Window Maker'a.
+libPropList jest bibliotek± wymagan± przez Window Maker'a.
 
 %package devel
 Summary:	libPropList libraries
@@ -62,7 +62,7 @@ make install \
 
 strip $RPM_BUILD_ROOT/usr/X11R6/lib/lib*.so.*.*
 
-bzip2 -9  AUTHORS ChangeLog NEWS README
+gzip -9nf AUTHORS ChangeLog NEWS README
 
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
@@ -72,7 +72,8 @@ rm -r $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS.bz2 ChangeLog.bz2 NEWS.bz2 README.bz2
+%doc {AUTHORS,ChangeLog,NEWS,README}.gz
+
 %attr(755,root,root) /usr/X11R6/lib/lib*.so.*.*
 
 %files devel
@@ -84,6 +85,11 @@ rm -r $RPM_BUILD_ROOT
 %attr(644,root,root) /usr/X11R6/lib/lib*.a
 
 %changelog
+* Sun Mar 14 1999 Micha³ Kuratczyk <kura@pld.org.pl>
+  [0.8.3-3]
+- gzipping documentation (instead bzipping)
+- fixed pl translation
+
 * Wed Feb 24 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.8.3-2]
 - added "Conflicts: glibc <= 2.0.7" for preven installing with proper
