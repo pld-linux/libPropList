@@ -1,7 +1,7 @@
 Summary:	library for reading/writing GNUstep-style defaults databases
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
-Version:	0.10.0
+Version:	0.10.1
 Release:	1
 License:	GPL
 Group:		X11/Libraries
@@ -82,7 +82,6 @@ gzip -9nf AUTHORS ChangeLog NEWS README
 rm -r $RPM_BUILD_ROOT
 
 %files
-%defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
@@ -93,5 +92,4 @@ rm -r $RPM_BUILD_ROOT
 %{_includedir}/*.h
 
 %files static
-%defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%attr(644,root,root) %{_libdir}/lib*.a
