@@ -3,10 +3,10 @@ Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.9.1
 Release:	2
+License:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
-Copyright:	GPL
-Source:		ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
 BuildRoot:	/tmp/%{name}-%{version}-root
 
@@ -21,8 +21,8 @@ of a file. The purpose of PL is to closely mimick the behaviour of the
 property lists used in GNUstep/OPENSTEP (there formed with the NSString,
 NSData, NSArray and NSDictionary classes) and to be compatible with it. PL
 enables programs that use configuration or preference files to make these
-compatible with GNUstep/OPENSTEP's user defaults handling mechanism, without
-needing to use Objective-C or GNUstep/OPENSTEP themselves.
+compatible with GNUstep/OPENSTEP's user defaults handling mechanism,
+without needing to use Objective-C or GNUstep/OPENSTEP themselves.
 
 %description -l pl
 libPropList jest bibliotek± wymagan± przez Window Maker'a.
@@ -31,6 +31,7 @@ libPropList jest bibliotek± wymagan± przez Window Maker'a.
 Summary:	libPropList libraries
 Summary(pl):	Biblioteki libPropList
 Group:		Development/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -39,12 +40,13 @@ libPropList headers files
 
 %description devel -l pl
 Ten pakiet zawiera pliki nag³ówkowe i biblioteki niezbêdne do tworzenia
-aplikacji korzystaj±cych z biblioteki libPropList. 
+aplikacji korzystaj±cych z biblioteki libPropList.
 
 %package static
 Summary:	libPropList static libraries
 Summary(pl):	Biblioteki statyczne libPropList
 Group:		Development/Libraries
+Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Requires:	%{name}-devel = %{version}
 
@@ -53,8 +55,8 @@ This package contains static libraries for building libPropList
 applications.
 
 %description static -l pl
-Ten pakiet zawiera statyczne biblioteki niezbêdne do tworzenia
-aplikacji korzystaj±cych z biblioteki libPropList. 
+Ten pakiet zawiera statyczne biblioteki niezbêdne do tworzenia aplikacji
+korzystaj±cych z biblioteki libPropList.
 
 %prep
 %setup -q 
