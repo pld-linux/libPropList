@@ -1,8 +1,8 @@
 Summary:	libPropList library
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
-Version:	0.8.3
-Release:	5
+Version:	0.9.0
+Release:	1
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Copyright:	GPL
@@ -51,9 +51,9 @@ aplikacji korzystaj±cych z biblioteki libPropList.
 %setup -q 
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target_platform} \
-	--prefix=%{_prefix}
+LDFLAGS="-s"; export LDFLAGS
+%configure
+
 make 
 
 %install
@@ -73,12 +73,13 @@ rm -r $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {AUTHORS,ChangeLog,NEWS,README}.gz
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
+%doc {AUTHORS,ChangeLog,NEWS,README}.gz
 %attr(755,root,root) %{_libdir}/lib*.so
+%attr(755,root,root) %{_libdir}/lib*.la
 %{_includedir}/*.h
 
 %files static
