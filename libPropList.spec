@@ -1,7 +1,5 @@
 Summary:	Library for reading/writing GNUstep-style defaults databases
-Summary(es):	Biblioteca necesaria para el WindowMaker
-Summary(pl):	Biblioteka libPropList
-Summary(pt_BR):	Biblioteca necessАria para o WindowMaker
+Summary(pl):	Biblioteka do odczytu i zapisu bazy danych ustawieЯ w stylu GNUstepa
 Summary(ru):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
 Summary(uk):	Б╕бл╕отека для читання/запису баз умовчань в стил╕ GNUstep
 Name:		libPropList
@@ -31,15 +29,23 @@ GNUstep/OPENSTEP's user defaults handling mechanism, without needing
 to use Objective-C or GNUstep/OPENSTEP themselves.
 
 %description -l es
-Biblioteca para acceder a base de datos GNUstep-style. Necesaria para
-el WindowMaker.
+Biblioteca para acceder a base de datos GNUstep-style.
 
 %description -l pl
-libPropList jest bibliotek╠ wymagan╠ przez Window Makera.
+Biblioteka libPropList, okre╤lana tu jako PL, u©ywa ukrytego typu
+danych do reprezentacji struktury drzewiastej stworzonej z ЁaЯcuchСw,
+blokСw danych, tablic i sЁownikСw (list par klucz-warto╤Ф). Struktura
+ta mo©e byФ modyfikowana, zapisywana i wczytywana z pliku oraz
+synchronizowana z zawarto╤ci╠ pliku. Celem PL jest bliskie
+na╤ladowanie zachowania list wЁasno╤ci u©ywanych w GNUstepie i
+OPENSTEPie (uformowanych w klasy NSString, NSData, NSArray i
+NSDictionary) i kompatybilno╤Ф z nimi. PL umo©liwia programom
+u©ywaj╠cym plikСw z konfiguracj╠ lub ustawieniami byФ kompatymilnymi z
+mechanizmem obsЁugi ustawieЯ GNUstepa/OPENSTEPa, bez potrzeby u©ywania
+jЙzyka Objective-C ani samego GNUstepa/OPENSTEPa.
 
 %description -l pt_BR
-Biblioteca para acessar base de dados GNUstep-style. NecessАria para o
-WindowMaker
+Biblioteca para acessar base de dados GNUstep-style.
 
 %description -l ru
 Библиотека libPropList, далее PL, использует непрозрачные типы данных
@@ -66,12 +72,10 @@ Objective-C или GNUstep/OPENSTEP.
 використовувати Objective-C чи GNUstep/OPENSTEP.
 
 %package devel
-Summary:	libPropList libraries
-Summary(es):	Archivos de inclusiСn y bibliotecas para libPropList
-Summary(pl):	Biblioteki libPropList
-Summary(pt_BR):	Arquivos de inclusЦo e bibliotecas para o libPropList
-Summary(ru):	Библиотека для баз умолчаний в стиле GNUstep
-Summary(uk):	Б╕бл╕отека для баз умовчань в стил╕ GNUstep
+Summary:	Header files for libPropList library
+Summary(es):	Archivos de inclusiСn para libPropList
+Summary(pl):	Pliki nagЁСwkowe biblioteki libPropList
+Summary(pt_BR):	Arquivos de inclusЦo para o libPropList
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
 
@@ -80,16 +84,16 @@ This package contains the headers that programmers will need to
 develop applications which will use libPropList.
 
 %description devel -l es
-Este paquete contiene los archivos de inclusiСn y bibliotecas que se
-necesitan para desarrollar programas que usan libPropList.
+Este paquete contiene los archivos de inclusiСn que se necesitan
+para desarrollar programas que usan libPropList.
 
 %description devel -l pl
-Ten pakiet zawiera pliki nagЁСwkowe i biblioteki niezbЙdne do
-tworzenia aplikacji korzystaj╠cych z biblioteki libPropList.
+Ten pakiet zawiera pliki nagЁСwkowe niezbЙdne do tworzenia aplikacji
+korzystaj╠cych z biblioteki libPropList.
 
 %description devel -l pt_BR
-Este pacote contИm os arquivos de inclusЦo e bibliotecas que sЦo
-necessАrios para desenvolver programas que usam o libPropList.
+Este pacote contИm os arquivos de inclusЦo que sЦo necessАrios para
+desenvolver programas que usam o libPropList.
 
 %description devel -l ru
 Этот пакет содержит .h файлы для разработки программ, использующих
@@ -100,38 +104,32 @@ libPropList.
 libPropList.
 
 %package static
-Summary:	libPropList static libraries
-Summary(es):	Archivos de inclusiСn y bibliotecas para libPropList en versiСn estАtica
-Summary(pl):	Biblioteki statyczne libPropList
-Summary(pt_BR):	Arquivos de inclusЦo e bibliotecas para o libPropList em versЦo estАtica
+Summary:	Static libPropList library
+Summary(es):	Biblioteca estАtica para libPropList
+Summary(pl):	Biblioteka statyczna libPropList
+Summary(pt_BR):	Biblioteca estАtica para o libPropList
 Summary(ru):	Статические библиотеки для libPropLis
 Summary(uk):	Статичн╕ б╕бл╕отеки для libPropLis
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
-This package contains static libraries for building libPropList
-applications.
+This package contains static version of libPropList library.
 
 %description static -l es
-Archivos de inclusiСn y bibliotecas para libPropList en versiСn
-estАtica
+Biblioteca estАtica para libPropList.
 
 %description static -l pl
-Ten pakiet zawiera statyczne biblioteki niezbЙdne do tworzenia
-aplikacji korzystaj╠cych z biblioteki libPropList.
+Ten pakiet zawiera statyczn╠ wersjЙ biblioteki libPropList.
 
 %description static -l pt_BR
-Arquivos de inclusЦo e bibliotecas para o libPropList em versЦo
-estАtica
+Biblioteca estАtica para o libPropList.
 
 %description static -l ru
-Этот пакет содержит статические библиотеки для сборки программ,
-использующих libPropList.
+Этот пакет содержит статические библиотеки libPropList.
 
 %description static -l uk
-Цей пакет м╕стить статичн╕ б╕бл╕отеки для програм, як╕ використовують
-libPropList.
+Цей пакет м╕стить статичн╕ б╕бл╕отеки libPropList.
 
 %prep
 %setup -q
