@@ -6,7 +6,7 @@ Release:     1d
 Group:       X11/Libraries
 Group(pl):   X11/Biblioteki
 Copyright:   GPL
-Source:      ftp://ftp.windowmaker.org/pub/beta/srcs/%{name}.tar.gz
+Source:      ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:         http://www.windowmaker.org/
 BuildRoot:   /tmp/%{name}-%{version}-root
 
@@ -86,6 +86,7 @@ rm -r $RPM_BUILD_ROOT
 * Fri Jan 29 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.8.3-1d]
 - removed "Prereq: /sbin/ldconfig" (this is generated automatically),
+- changed base Source url and added using %%{version} macro in Source,
 - fixed Requires for static subpackage 
   (must be %%{name}-devel = %%{version}).
 
