@@ -2,14 +2,13 @@ Summary:	libPropList library
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.8.3
-Release:	3
+Release:	4
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Copyright:	GPL
 Source:		ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
 BuildRoot:	/tmp/%{name}-%{version}-root
-Conflicts:	glibc <= 2.0.7
 
 %description
 libPropList library, needed by Window Maker.
@@ -86,6 +85,10 @@ rm -r $RPM_BUILD_ROOT
 /usr/X11R6/lib/lib*.a
 
 %changelog
+* Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
+  [0.8.3-4]
+- compiled on rpm 3
+
 * Sun Mar 14 1999 Micha³ Kuratczyk <kura@pld.org.pl>
   [0.8.3-3]
 - gzipping documentation (instead bzipping)
