@@ -66,11 +66,11 @@ aplikacji korzystaj±cych z biblioteki libPropList.
 LDFLAGS="-s"; export LDFLAGS
 %configure
 
-make 
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT 
 
 strip $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
 
