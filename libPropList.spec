@@ -84,10 +84,3 @@ rm -r $RPM_BUILD_ROOT
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
-
-%changelog
-* Thu May 20 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.8.3-5]
-- spec written by Artur Frysiak <wiget@usa.net> modified by me an Micha³
-  Kuratczyk <kura@pld.org.pl>,
-- package is FHS 2.0 compliant.
