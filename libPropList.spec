@@ -1,14 +1,14 @@
 Summary:	library for reading/writing GNUstep-style defaults databases
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
-Version:	0.9.1
-Release:	2
+Version:	0.10.0
+Release:	1
 License:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr
 
