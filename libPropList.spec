@@ -59,6 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 make install \
 	DESTDIR=$RPM_BUILD_ROOT 
 
+strip $RPM_BUILD_ROOT/usr/X11R6/lib/lib*.so.*.*
+
 bzip2 -9  AUTHORS ChangeLog NEWS README
 
 %post   -p /sbin/ldconfig
@@ -70,7 +72,7 @@ rm -r $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS.bz2 ChangeLog.bz2 NEWS.bz2 README.bz2
-%attr(755,root,root) /usr/X11R6/lib/lib*.so.*
+%attr(755,root,root) /usr/X11R6/lib/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
@@ -85,6 +87,7 @@ rm -r $RPM_BUILD_ROOT
 %changelog
 * Fri Jan 29 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.8.3-1d]
+- added striping shared bibraries,
 - removed "Prereq: /sbin/ldconfig" (this is generated automatically),
 - changed base Source url and added using %%{version} macro in Source,
 - fixed Requires for static subpackage 
