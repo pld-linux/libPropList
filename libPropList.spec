@@ -1,14 +1,14 @@
-Summary:     libPropList library
-Summary(pl): Biblioteka libPropList
-Name:        libPropList
-Version:     0.8.3
-Release:     1d
-Group:       X11/Libraries
-Group(pl):   X11/Biblioteki
-Copyright:   GPL
-Source:      ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
-URL:         http://www.windowmaker.org/
-BuildRoot:   /tmp/%{name}-%{version}-root
+Summary:	libPropList library
+Summary(pl):	Biblioteka libPropList
+Name:		libPropList
+Version:	0.8.3
+Release:	1d
+Group:		X11/Libraries
+Group(pl):	X11/Biblioteki
+Copyright:	GPL
+Source:		ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
+URL:		http://www.windowmaker.org/
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 libPropList library, needed by Window Maker.
