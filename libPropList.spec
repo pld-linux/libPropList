@@ -82,7 +82,8 @@ rm -r $RPM_BUILD_ROOT
 /usr/X11R6/include/*.h
 
 %files static
-%attr(644,root,root) /usr/X11R6/lib/lib*.a
+%defattr(644,root,root,755)
+/usr/X11R6/lib/lib*.a
 
 %changelog
 * Sun Mar 14 1999 Micha³ Kuratczyk <kura@pld.org.pl>
