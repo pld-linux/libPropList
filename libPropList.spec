@@ -17,8 +17,6 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr
-
 %description
 The libPropList library, hereafter referred to as PL, uses an opaque
 data type to represent a tree structure made of strings, data blocks,
@@ -37,7 +35,7 @@ Biblioteca para acceder a base de datos GNUstep-style. Necesaria para
 el WindowMaker.
 
 %description -l pl
-libPropList jest bibliotek± wymagan± przez Window Maker'a.
+libPropList jest bibliotek± wymagan± przez Window Makera.
 
 %description -l pt_BR
 Biblioteca para acessar base de dados GNUstep-style. Necessária para o
@@ -150,21 +148,22 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post   -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
+
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/*.h
