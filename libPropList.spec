@@ -36,13 +36,13 @@ Biblioteka libPropList, okre¶lana tu jako PL, u¿ywa ukrytego typu
 danych do reprezentacji struktury drzewiastej stworzonej z ³añcuchów,
 bloków danych, tablic i s³owników (list par klucz-warto¶æ). Struktura
 ta mo¿e byæ modyfikowana, zapisywana i wczytywana z pliku oraz
-synchronizowana z zawarto¶ci± pliku. Celem PL jest bliskie
-na¶ladowanie zachowania list w³asno¶ci u¿ywanych w GNUstepie i
-OPENSTEPie (uformowanych w klasy NSString, NSData, NSArray i
-NSDictionary) i kompatybilno¶æ z nimi. PL umo¿liwia programom
-u¿ywaj±cym plików z konfiguracj± lub ustawieniami byæ kompatymilnymi z
-mechanizmem obs³ugi ustawieñ GNUstepa/OPENSTEPa, bez potrzeby u¿ywania
-jêzyka Objective-C ani samego GNUstepa/OPENSTEPa.
+synchronizowana z zawarto¶ci± pliku. Celem PL jest bliskie na¶ladowanie 
+zachowania list w³asno¶ci u¿ywanych w GNUstepie i OPENSTEPie 
+(uformowanych w klasy NSString, NSData, NSArray i NSDictionary) 
+i kompatybilno¶æ z nimi. PL umo¿liwia programom u¿ywaj±cym plików 
+z konfiguracj± lub ustawieniami byæ kompatybinymi z mechanizmem obs³ugi 
+ustawieñ GNUstepa/OPENSTEPa, bez potrzeby u¿ywania jêzyka Objective-C 
+ani samego GNUstepa/OPENSTEPa.
 
 %description -l pt_BR
 Biblioteca para acessar base de dados GNUstep-style.
