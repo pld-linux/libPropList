@@ -9,6 +9,7 @@ Copyright:	GPL
 Source:		ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 URL:		http://www.windowmaker.org/
 BuildRoot:	/tmp/%{name}-%{version}-root
+Conflicts:	glibc <= 2.0.7
 
 %description
 libPropList library, needed by Window Maker.
@@ -85,6 +86,8 @@ rm -r $RPM_BUILD_ROOT
 %changelog
 * Wed Feb 24 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.8.3-2]
+- added "Conflicts: glibc <= 2.0.7" for preven installing with proper
+  version glibc,
 - removed /usr/X11R6/lib/lib*.la from static.
 
 * Fri Jan 29 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
