@@ -1,0 +1,1 @@
+- install in %{_prefix} (this not depend to Xlib and bros.)
