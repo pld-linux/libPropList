@@ -2,7 +2,7 @@ Summary:	library for reading/writing GNUstep-style defaults databases
 Summary(pl):	Biblioteka libPropList
 Name:		libPropList
 Version:	0.10.1
-Release:	1
+Release:	3
 License:	GPL
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
