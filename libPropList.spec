@@ -1,4 +1,4 @@
-Summary:	library for reading/writing GNUstep-style defaults databases
+Summary:	Library for reading/writing GNUstep-style defaults databases
 Summary(es):	Biblioteca necesaria para el WindowMaker
 Summary(pl):	Biblioteka libPropList
 Summary(pt_BR):	Biblioteca necessária para o WindowMaker
