@@ -4,7 +4,7 @@ Summary(ru):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
 Summary(uk):	Б╕бл╕отека для читання/запису баз умовчань в стил╕ GNUstep
 Name:		libPropList
 Version:	0.10.1
-Release:	12
+Release:	13
 License:	GPL
 Group:		X11/Libraries
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
