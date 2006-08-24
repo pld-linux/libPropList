@@ -77,7 +77,7 @@ Summary(es):	Archivos de inclusiСn para libPropList
 Summary(pl):	Pliki nagЁСwkowe biblioteki libPropList
 Summary(pt_BR):	Arquivos de inclusЦo para o libPropList
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains the headers that programmers will need to
@@ -111,7 +111,7 @@ Summary(pt_BR):	Biblioteca estАtica para o libPropList
 Summary(ru):	Статические библиотеки для libPropLis
 Summary(uk):	Статичн╕ б╕бл╕отеки для libPropLis
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains static version of libPropList library.
@@ -135,7 +135,6 @@ Biblioteca estАtica para o libPropList.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
