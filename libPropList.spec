@@ -1,7 +1,7 @@
 Summary:	Library for reading/writing GNUstep-style defaults databases
-Summary(pl):	Biblioteka do odczytu i zapisu bazy danych ustawieЯ w stylu GNUstepa
-Summary(ru):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
-Summary(uk):	Б╕бл╕отека для читання/запису баз умовчань в стил╕ GNUstep
+Summary(pl.UTF-8):   Biblioteka do odczytu i zapisu bazy danych ustawieе└ w stylu GNUstepa
+Summary(ru.UTF-8):   п▒п╦п╠п╩п╦п╬я┌п╣п╨п╟ п╢п╩я▐ я┤я┌п╣п╫п╦я▐/п╥п╟п©п╦я│п╦ п╠п╟п╥ я┐п╪п╬п╩я┤п╟п╫п╦п╧ п╡ я│я┌п╦п╩п╣ GNUstep
+Summary(uk.UTF-8):   п▒я√п╠п╩я√п╬я┌п╣п╨п╟ п╢п╩я▐ я┤п╦я┌п╟п╫п╫я▐/п╥п╟п©п╦я│я┐ п╠п╟п╥ я┐п╪п╬п╡я┤п╟п╫я▄ п╡ я│я┌п╦п╩я√ GNUstep
 Name:		libPropList
 Version:	0.10.1
 Release:	13
@@ -28,54 +28,54 @@ configuration or preference files to make these compatible with
 GNUstep/OPENSTEP's user defaults handling mechanism, without needing
 to use Objective-C or GNUstep/OPENSTEP themselves.
 
-%description -l es
+%description -l es.UTF-8
 Biblioteca para acceder a base de datos GNUstep-style.
 
-%description -l pl
-Biblioteka libPropList, okre╤lana tu jako PL, u©ywa ukrytego typu
-danych do reprezentacji struktury drzewiastej stworzonej z ЁaЯcuchСw,
-blokСw danych, tablic i sЁownikСw (list par klucz-warto╤Ф). Struktura
-ta mo©e byФ modyfikowana, zapisywana i wczytywana z pliku oraz
-synchronizowana z zawarto╤ci╠ pliku. Celem PL jest bliskie na╤ladowanie 
-zachowania list wЁasno╤ci u©ywanych w GNUstepie i OPENSTEPie 
+%description -l pl.UTF-8
+Biblioteka libPropList, okreе⌡lana tu jako PL, uе╪ywa ukrytego typu
+danych do reprezentacji struktury drzewiastej stworzonej z е┌aе└cuchцЁw,
+blokцЁw danych, tablic i sе┌ownikцЁw (list par klucz-wartoе⌡д┤). Struktura
+ta moе╪e byд┤ modyfikowana, zapisywana i wczytywana z pliku oraz
+synchronizowana z zawartoе⌡ciд┘ pliku. Celem PL jest bliskie naе⌡ladowanie 
+zachowania list wе┌asnoе⌡ci uе╪ywanych w GNUstepie i OPENSTEPie 
 (uformowanych w klasy NSString, NSData, NSArray i NSDictionary) 
-i kompatybilno╤Ф z nimi. PL umo©liwia programom u©ywaj╠cym plikСw 
-z konfiguracj╠ lub ustawieniami byФ kompatybinymi z mechanizmem obsЁugi 
-ustawieЯ GNUstepa/OPENSTEPa, bez potrzeby u©ywania jЙzyka Objective-C 
+i kompatybilnoе⌡д┤ z nimi. PL umoе╪liwia programom uе╪ywajд┘cym plikцЁw 
+z konfiguracjд┘ lub ustawieniami byд┤ kompatybinymi z mechanizmem obsе┌ugi 
+ustawieе└ GNUstepa/OPENSTEPa, bez potrzeby uе╪ywania jд≥zyka Objective-C 
 ani samego GNUstepa/OPENSTEPa.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Biblioteca para acessar base de dados GNUstep-style.
 
-%description -l ru
-Библиотека libPropList, далее PL, использует непрозрачные типы данных
-для представления древовидной структуры строк символов, блоков данных,
-массивов и словарей (списков пар ключ-значение). Этой структурой можно
-манипулировать, записывать в файл и считывать из файла,
-синхронизировать с содержанием файла. Цель PL - повторить поведение
-списков свойств из GNUstep/OPENSTEP и быть совместимой с ними. PL
-позволяет программам, использующим файлы конфигурации или персональных
-настроек, делать это совместимо с механизмом обработки умолчаний
-пользователей GNUstep/OPENSTEP без необходимости использовать
-Objective-C или GNUstep/OPENSTEP.
+%description -l ru.UTF-8
+п▒п╦п╠п╩п╦п╬я┌п╣п╨п╟ libPropList, п╢п╟п╩п╣п╣ PL, п╦я│п©п╬п╩я▄п╥я┐п╣я┌ п╫п╣п©я─п╬п╥я─п╟я┤п╫я▀п╣ я┌п╦п©я▀ п╢п╟п╫п╫я▀я┘
+п╢п╩я▐ п©я─п╣п╢я│я┌п╟п╡п╩п╣п╫п╦я▐ п╢я─п╣п╡п╬п╡п╦п╢п╫п╬п╧ я│я┌я─я┐п╨я┌я┐я─я▀ я│я┌я─п╬п╨ я│п╦п╪п╡п╬п╩п╬п╡, п╠п╩п╬п╨п╬п╡ п╢п╟п╫п╫я▀я┘,
+п╪п╟я│я│п╦п╡п╬п╡ п╦ я│п╩п╬п╡п╟я─п╣п╧ (я│п©п╦я│п╨п╬п╡ п©п╟я─ п╨п╩я▌я┤-п╥п╫п╟я┤п╣п╫п╦п╣). п╜я┌п╬п╧ я│я┌я─я┐п╨я┌я┐я─п╬п╧ п╪п╬п╤п╫п╬
+п╪п╟п╫п╦п©я┐п╩п╦я─п╬п╡п╟я┌я▄, п╥п╟п©п╦я│я▀п╡п╟я┌я▄ п╡ я└п╟п╧п╩ п╦ я│я┤п╦я┌я▀п╡п╟я┌я▄ п╦п╥ я└п╟п╧п╩п╟,
+я│п╦п╫я┘я─п╬п╫п╦п╥п╦я─п╬п╡п╟я┌я▄ я│ я│п╬п╢п╣я─п╤п╟п╫п╦п╣п╪ я└п╟п╧п╩п╟. п╕п╣п╩я▄ PL - п©п╬п╡я┌п╬я─п╦я┌я▄ п©п╬п╡п╣п╢п╣п╫п╦п╣
+я│п©п╦я│п╨п╬п╡ я│п╡п╬п╧я│я┌п╡ п╦п╥ GNUstep/OPENSTEP п╦ п╠я▀я┌я▄ я│п╬п╡п╪п╣я│я┌п╦п╪п╬п╧ я│ п╫п╦п╪п╦. PL
+п©п╬п╥п╡п╬п╩я▐п╣я┌ п©я─п╬пЁя─п╟п╪п╪п╟п╪, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦п╪ я└п╟п╧п╩я▀ п╨п╬п╫я└п╦пЁя┐я─п╟я├п╦п╦ п╦п╩п╦ п©п╣я─я│п╬п╫п╟п╩я▄п╫я▀я┘
+п╫п╟я│я┌я─п╬п╣п╨, п╢п╣п╩п╟я┌я▄ я█я┌п╬ я│п╬п╡п╪п╣я│я┌п╦п╪п╬ я│ п╪п╣я┘п╟п╫п╦п╥п╪п╬п╪ п╬п╠я─п╟п╠п╬я┌п╨п╦ я┐п╪п╬п╩я┤п╟п╫п╦п╧
+п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩п╣п╧ GNUstep/OPENSTEP п╠п╣п╥ п╫п╣п╬п╠я┘п╬п╢п╦п╪п╬я│я┌п╦ п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄
+Objective-C п╦п╩п╦ GNUstep/OPENSTEP.
 
-%description -l uk
-Б╕бл╕отека libPropList, надал╕ PL, використову╓ непрозор╕ типи даних
-для представлення деревовидно╖ структури ланцюжк╕в символ╕в, блок╕в
-даних, масив╕в та словник╕в (списк╕в пар ключ-значення). Ц╕╓ю
-структурою можна ман╕пулювати, записувати в файл та зчитувати з файлу
-та синхрон╕зувати з вм╕стом файлу. Мета PL - повторити повед╕нку
-списк╕в властивостей з GNUstep/OPENSTEP та бути сум╕сною з ними. PL
-дозволя╓ програмам, що використовують файли конф╕гурац╕╖ чи
-персональних налаштувань, робити це сум╕сно з механ╕змом обробки
-умовчань користувач╕в GNUstep/OPENSTEP без необх╕дност╕
-використовувати Objective-C чи GNUstep/OPENSTEP.
+%description -l uk.UTF-8
+п▒я√п╠п╩я√п╬я┌п╣п╨п╟ libPropList, п╫п╟п╢п╟п╩я√ PL, п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я■ п╫п╣п©я─п╬п╥п╬я─я√ я┌п╦п©п╦ п╢п╟п╫п╦я┘
+п╢п╩я▐ п©я─п╣п╢я│я┌п╟п╡п╩п╣п╫п╫я▐ п╢п╣я─п╣п╡п╬п╡п╦п╢п╫п╬я≈ я│я┌я─я┐п╨я┌я┐я─п╦ п╩п╟п╫я├я▌п╤п╨я√п╡ я│п╦п╪п╡п╬п╩я√п╡, п╠п╩п╬п╨я√п╡
+п╢п╟п╫п╦я┘, п╪п╟я│п╦п╡я√п╡ я┌п╟ я│п╩п╬п╡п╫п╦п╨я√п╡ (я│п©п╦я│п╨я√п╡ п©п╟я─ п╨п╩я▌я┤-п╥п╫п╟я┤п╣п╫п╫я▐). п╕я√я■я▌
+я│я┌я─я┐п╨я┌я┐я─п╬я▌ п╪п╬п╤п╫п╟ п╪п╟п╫я√п©я┐п╩я▌п╡п╟я┌п╦, п╥п╟п©п╦я│я┐п╡п╟я┌п╦ п╡ я└п╟п╧п╩ я┌п╟ п╥я┤п╦я┌я┐п╡п╟я┌п╦ п╥ я└п╟п╧п╩я┐
+я┌п╟ я│п╦п╫я┘я─п╬п╫я√п╥я┐п╡п╟я┌п╦ п╥ п╡п╪я√я│я┌п╬п╪ я└п╟п╧п╩я┐. п°п╣я┌п╟ PL - п©п╬п╡я┌п╬я─п╦я┌п╦ п©п╬п╡п╣п╢я√п╫п╨я┐
+я│п©п╦я│п╨я√п╡ п╡п╩п╟я│я┌п╦п╡п╬я│я┌п╣п╧ п╥ GNUstep/OPENSTEP я┌п╟ п╠я┐я┌п╦ я│я┐п╪я√я│п╫п╬я▌ п╥ п╫п╦п╪п╦. PL
+п╢п╬п╥п╡п╬п╩я▐я■ п©я─п╬пЁя─п╟п╪п╟п╪, я┴п╬ п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я▌я┌я▄ я└п╟п╧п╩п╦ п╨п╬п╫я└я√пЁя┐я─п╟я├я√я≈ я┤п╦
+п©п╣я─я│п╬п╫п╟п╩я▄п╫п╦я┘ п╫п╟п╩п╟я┬я┌я┐п╡п╟п╫я▄, я─п╬п╠п╦я┌п╦ я├п╣ я│я┐п╪я√я│п╫п╬ п╥ п╪п╣я┘п╟п╫я√п╥п╪п╬п╪ п╬п╠я─п╬п╠п╨п╦
+я┐п╪п╬п╡я┤п╟п╫я▄ п╨п╬я─п╦я│я┌я┐п╡п╟я┤я√п╡ GNUstep/OPENSTEP п╠п╣п╥ п╫п╣п╬п╠я┘я√п╢п╫п╬я│я┌я√
+п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐п╡п╟я┌п╦ Objective-C я┤п╦ GNUstep/OPENSTEP.
 
 %package devel
 Summary:	Header files for libPropList library
-Summary(es):	Archivos de inclusiСn para libPropList
-Summary(pl):	Pliki nagЁСwkowe biblioteki libPropList
-Summary(pt_BR):	Arquivos de inclusЦo para o libPropList
+Summary(es.UTF-8):   Archivos de inclusiцЁn para libPropList
+Summary(pl.UTF-8):   Pliki nagе┌цЁwkowe biblioteki libPropList
+Summary(pt_BR.UTF-8):   Arquivos de inclusцёo para o libPropList
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -83,53 +83,53 @@ Requires:	%{name} = %{version}-%{release}
 This package contains the headers that programmers will need to
 develop applications which will use libPropList.
 
-%description devel -l es
-Este paquete contiene los archivos de inclusiСn que se necesitan
+%description devel -l es.UTF-8
+Este paquete contiene los archivos de inclusiцЁn que se necesitan
 para desarrollar programas que usan libPropList.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nagЁСwkowe niezbЙdne do tworzenia aplikacji
-korzystaj╠cych z biblioteki libPropList.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagе┌цЁwkowe niezbд≥dne do tworzenia aplikacji
+korzystajд┘cych z biblioteki libPropList.
 
-%description devel -l pt_BR
-Este pacote contИm os arquivos de inclusЦo que sЦo necessАrios para
+%description devel -l pt_BR.UTF-8
+Este pacote contц╘m os arquivos de inclusцёo que sцёo necessц║rios para
 desenvolver programas que usam o libPropList.
 
-%description devel -l ru
-Этот пакет содержит .h файлы для разработки программ, использующих
+%description devel -l ru.UTF-8
+п╜я┌п╬я┌ п©п╟п╨п╣я┌ я│п╬п╢п╣я─п╤п╦я┌ .h я└п╟п╧п╩я▀ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╨п╦ п©я─п╬пЁя─п╟п╪п╪, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦я┘
 libPropList.
 
-%description devel -l uk
-Цей пакет м╕стить .h файли для розробки програм, як╕ використовують
+%description devel -l uk.UTF-8
+п╕п╣п╧ п©п╟п╨п╣я┌ п╪я√я│я┌п╦я┌я▄ .h я└п╟п╧п╩п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╨п╦ п©я─п╬пЁя─п╟п╪, я▐п╨я√ п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐я▌я┌я▄
 libPropList.
 
 %package static
 Summary:	Static libPropList library
-Summary(es):	Biblioteca estАtica para libPropList
-Summary(pl):	Biblioteka statyczna libPropList
-Summary(pt_BR):	Biblioteca estАtica para o libPropList
-Summary(ru):	Статические библиотеки для libPropLis
-Summary(uk):	Статичн╕ б╕бл╕отеки для libPropLis
+Summary(es.UTF-8):   Biblioteca estц║tica para libPropList
+Summary(pl.UTF-8):   Biblioteka statyczna libPropList
+Summary(pt_BR.UTF-8):   Biblioteca estц║tica para o libPropList
+Summary(ru.UTF-8):   п║я┌п╟я┌п╦я┤п╣я│п╨п╦п╣ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ libPropLis
+Summary(uk.UTF-8):   п║я┌п╟я┌п╦я┤п╫я√ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ libPropLis
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains static version of libPropList library.
 
-%description static -l es
-Biblioteca estАtica para libPropList.
+%description static -l es.UTF-8
+Biblioteca estц║tica para libPropList.
 
-%description static -l pl
-Ten pakiet zawiera statyczn╠ wersjЙ biblioteki libPropList.
+%description static -l pl.UTF-8
+Ten pakiet zawiera statycznд┘ wersjд≥ biblioteki libPropList.
 
-%description static -l pt_BR
-Biblioteca estАtica para o libPropList.
+%description static -l pt_BR.UTF-8
+Biblioteca estц║tica para o libPropList.
 
-%description static -l ru
-Этот пакет содержит статические библиотеки libPropList.
+%description static -l ru.UTF-8
+п╜я┌п╬я┌ п©п╟п╨п╣я┌ я│п╬п╢п╣я─п╤п╦я┌ я│я┌п╟я┌п╦я┤п╣я│п╨п╦п╣ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ libPropList.
 
-%description static -l uk
-Цей пакет м╕стить статичн╕ б╕бл╕отеки libPropList.
+%description static -l uk.UTF-8
+п╕п╣п╧ п©п╟п╨п╣я┌ п╪я√я│я┌п╦я┌я▄ я│я┌п╟я┌п╦я┤п╫я√ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ libPropList.
 
 %prep
 %setup -q
