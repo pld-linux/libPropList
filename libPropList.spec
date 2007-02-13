@@ -1,7 +1,7 @@
 Summary:	Library for reading/writing GNUstep-style defaults databases
-Summary(pl.UTF-8):   Biblioteka do odczytu i zapisu bazy danych ustawień w stylu GNUstepa
-Summary(ru.UTF-8):   Библиотека для чтения/записи баз умолчаний в стиле GNUstep
-Summary(uk.UTF-8):   Бібліотека для читання/запису баз умовчань в стилі GNUstep
+Summary(pl.UTF-8):	Biblioteka do odczytu i zapisu bazy danych ustawień w stylu GNUstepa
+Summary(ru.UTF-8):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
+Summary(uk.UTF-8):	Бібліотека для читання/запису баз умовчань в стилі GNUstep
 Name:		libPropList
 Version:	0.10.1
 Release:	13
@@ -73,9 +73,9 @@ Objective-C или GNUstep/OPENSTEP.
 
 %package devel
 Summary:	Header files for libPropList library
-Summary(es.UTF-8):   Archivos de inclusión para libPropList
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libPropList
-Summary(pt_BR.UTF-8):   Arquivos de inclusão para o libPropList
+Summary(es.UTF-8):	Archivos de inclusión para libPropList
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libPropList
+Summary(pt_BR.UTF-8):	Arquivos de inclusão para o libPropList
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -105,11 +105,11 @@ libPropList.
 
 %package static
 Summary:	Static libPropList library
-Summary(es.UTF-8):   Biblioteca estática para libPropList
-Summary(pl.UTF-8):   Biblioteka statyczna libPropList
-Summary(pt_BR.UTF-8):   Biblioteca estática para o libPropList
-Summary(ru.UTF-8):   Статические библиотеки для libPropLis
-Summary(uk.UTF-8):   Статичні бібліотеки для libPropLis
+Summary(es.UTF-8):	Biblioteca estática para libPropList
+Summary(pl.UTF-8):	Biblioteka statyczna libPropList
+Summary(pt_BR.UTF-8):	Biblioteca estática para o libPropList
+Summary(ru.UTF-8):	Статические библиотеки для libPropLis
+Summary(uk.UTF-8):	Статичні бібліотеки для libPropLis
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
