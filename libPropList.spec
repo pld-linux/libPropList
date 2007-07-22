@@ -1,3 +1,6 @@
+# Conditional build:
+%bcond_without	static_libs	# don't build static library
+#
 Summary:	Library for reading/writing GNUstep-style defaults databases
 Summary(pl.UTF-8):	Biblioteka do odczytu i zapisu bazy danych ustawień w stylu GNUstepa
 Summary(ru.UTF-8):	Библиотека для чтения/записи баз умолчаний в стиле GNUstep
@@ -139,7 +142,8 @@ Biblioteca estática para o libPropList.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	%{!?with_static_libs:--disable-static}
 %{__make}
 
 %install
@@ -165,6 +169,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.la
 %{_includedir}/*.h
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
+%endif
