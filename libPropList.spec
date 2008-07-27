@@ -8,7 +8,7 @@ Summary(ru.UTF-8):	Библиотека для чтения/записи баз 
 Summary(uk.UTF-8):	Бібліотека для читання/запису баз умовчань в стилі GNUstep
 Name:		libPropList
 Version:	0.10.1
-Release:	13
+Release:	14
 License:	GPL
 Group:		X11/Libraries
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
