@@ -8,11 +8,12 @@ Summary(ru.UTF-8):	Библиотека для чтения/записи баз 
 Summary(uk.UTF-8):	Бібліотека для читання/запису баз умовчань в стилі GNUstep
 Name:		libPropList
 Version:	0.10.1
-Release:	14
+Release:	15
 License:	GPL
 Group:		X11/Libraries
 Source0:	ftp://ftp.windowmaker.org/pub/libs/%{name}-%{version}.tar.gz
 # Source0-md5:	ff32a4edbf9d0861012b2f10fd302ad5
+Patch0:		format-security.patch
 URL:		http://www.windowmaker.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -137,6 +138,7 @@ Biblioteca estática para o libPropList.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -163,6 +165,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
 
 %files devel
 %defattr(644,root,root,755)
