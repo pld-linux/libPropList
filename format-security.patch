@@ -1,6 +1,26 @@
---- libPropList-0.10.1/util.c.orig	2014-01-14 10:40:09.183601243 +0100
-+++ libPropList-0.10.1/util.c	2014-01-14 10:41:31.031533654 +0100
-@@ -213,15 +213,15 @@ char *MakeDefaultsFilename()
+--- libPropList-0.10.1/util.c.orig	1999-01-28 08:11:12.000000000 +0100
++++ libPropList-0.10.1/util.c	2014-01-18 23:22:10.186445054 +0100
+@@ -200,10 +200,17 @@ char *ManglePath(const char *path)
+       
+ char *MakeDefaultsFilename()
+ {
+-  char *env;
+-  char actual_filename[255];
++  char *env, *env2, *envh, *actual_filename, *ret;
++  size_t len;
+ 
+   env = (char *)getenv("GNUSTEP_USER_PATH");
++  env2 = (char *)getenv("GNUSTEP_DEFAULTS_FILE");
++  envh = (char *)getenv("HOME");
++
++  len = (env ? strlen(env) : (envh ? (strlen(envh) + 8) : 8)) + 1 + (env2 ? strlen(env2) : 8);
++
++  actual_filename = (char *)MyMalloc(__FILE__, __LINE__, len + 1);
++
+   if(!env)
+     {
+       env = (char *)getenv("HOME");
+@@ -213,17 +220,19 @@ char *MakeDefaultsFilename()
  	sprintf(actual_filename, "%s/GNUstep", env);
      }
    else
@@ -18,5 +38,10 @@
 -    sprintf(&(actual_filename[strlen(actual_filename)]), env);
 +    strcpy(&(actual_filename[strlen(actual_filename)]), env);
  
-   return ManglePath(actual_filename);
+-  return ManglePath(actual_filename);
++  ret = ManglePath(actual_filename);
++  MyFree(__FILE__, __LINE__, actual_filename);
++  return ret;
  }
+ 
+ BOOL LockFile(char *name)
